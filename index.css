@@ -1,0 +1,77 @@
+.button1{
+    height: 50px;
+    width: 150px;
+    border: 2px solid black;
+}
+.button1:focus{
+    background-color: red;
+}
+.button2{
+    height: 50px;
+    width: 150px;
+    border: 2px solid black;
+}
+.button2:focus{
+    background-color: green;
+}
+.button3{
+    height: 50px;
+    width: 150px;
+    border: 2px solid black;
+}
+.button3:focus{
+    background-color: yellow;
+}
+.button4{
+    height: 50px;
+    width: 150px;
+    border: 2px solid black;
+}
+.button4:focus{
+    background-color: blue;
+}
+.button5{
+    height: 50px;
+    width: 150px;
+    border: 2px solid black;
+}
+
+.container{
+    height: 1000px;
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.box{
+    height: 250px;
+    width: 500px;
+    border: 2px solid black;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    
+}
+
+.box1{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    
+}
+
+.box2{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.box3{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+}

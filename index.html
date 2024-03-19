@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAFFIC LIGHTS</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h3>Name- Nitin Gupta<br>Registration Number- 1594<br>Email Id- niting001173@gmail.com</h3>
+    <button class="button1" onclick="btnRed()">RED</button><br><br>
+    <button class="button2" onclick="btnGreen()">GREEN</button><br><br>
+    <button class="button3" onclick="btnYellow()">YELLOW</button><br><br>
+    <button class="button4" onclick="btnAll()">ALL</button><br><br>
+    <button class="button5" onclick="btnAlt()">ALT</button><br><br>
+    <div class="container">
+        <div class="box">
+            <div id="box1" class="box1"></div>
+            <div id="box2" class="box2"></div>
+            <div id="box3" class="box3"></div>
+        </div>
+    </div>
+    <script>
+        function btnRed() {
+            document.getElementById("box3").style.backgroundColor = "";
+            document.getElementById("box2").style.backgroundColor = "";
+            document.getElementById("box1").style.backgroundColor = "red";
+        }
+        function btnGreen() {
+            document.getElementById("box1").style.backgroundColor = "";
+            document.getElementById("box3").style.backgroundColor = "";
+            document.getElementById("box2").style.backgroundColor = "green";
+        }
+        function btnYellow() {
+            document.getElementById("box1").style.backgroundColor = "";
+            document.getElementById("box2").style.backgroundColor = "";
+            document.getElementById("box3").style.backgroundColor = "yellow";
+        }
+        function btnAll() {
+            document.getElementById("box1").style.backgroundColor = "red";
+            document.getElementById("box2").style.backgroundColor = "green";
+            document.getElementById("box3").style.backgroundColor = "yellow";
+        }
+        function btnAlt() {
+            
+            document.getElementById("box1").style.backgroundColor = "";
+            document.getElementById("box2").style.backgroundColor = "";
+            document.getElementById("box3").style.backgroundColor = "";
+            var intervalId = setInterval(function() {
+        setTimeout(function() {
+        document.getElementsByClassName("button5")[0].style.backgroundColor = "red";
+        });
+        document.getElementById("box1").style.backgroundColor = "red";
+        setTimeout(function() {
+            document.getElementsByClassName("button5")[0].style.backgroundColor = "green";
+        }, 1000);
+        
+        setTimeout(function() {
+            document.getElementById("box2").style.backgroundColor = "green";
+        }, 1000); 
+        
+        setTimeout(function() {
+            document.getElementById("box1").style.backgroundColor = "";
+        }, 1000); 
+        
+        setTimeout(function() {
+            document.getElementById("box3").style.backgroundColor = "yellow";
+        }, 2000); 
+        
+        setTimeout(function() {
+            document.getElementById("box1").style.backgroundColor = "";
+            document.getElementById("box2").style.backgroundColor = "";
+        }, 2000); 
+        
+        setTimeout(function() {
+            document.getElementsByClassName("button5")[0].style.backgroundColor = "yellow";
+        }, 2000);
+        setTimeout(function() {
+            document.getElementById("box3").style.backgroundColor = "";
+        }, 3000);
+        setTimeout(function() {
+            document.getElementsByClassName("button5")[0].style.backgroundColor = "";
+        },3000);
+        },4000);
+        
+
+
+    }
+    </script>
+</body>
+</html>
